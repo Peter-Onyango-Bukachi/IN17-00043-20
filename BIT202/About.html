@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+img{
+ display: inline-block;
+ height: 100px;
+ width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: whitesmoke;
+}
+
+.container {
+  padding: 0 16px;
+  border-color: yellow;
+
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color:#007200;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  h1{
+    text-indent: bold 6px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Its BUKEIN TECHNOLOGIES LTD a first coming coming company that deals with<br>
+     both indoor,outdoor,spy,solar camera,electrical,fire extinguisher installation.
+  </p>
+  <p style="text-shadow: 1px 1px 2px #474e5d, 0 0 25px blue, 0 0 5px darkblue;
+">YOUR SOLUTION IN THE WORLD OF TECHNOLOGY.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="pics/ceo.jpg" alt="Kennedy" style="width:50%">
+      <div class="container">
+        <h2>Kennedy Bukachi</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Am degree holder in electrical and electronic engineering and founder of this company.</p>
+        <p>bukeinkenn@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="pics/desiner.jpg" alt="Peter" style="width:50%">
+      <div class="container">
+        <h2>Peter Bukachi</h2>
+        <p class="title">Web designer</p>
+        <p>Am an IT proffesional specialize in web designing and IoT.</p>
+        <p>bupeit.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src=".jpg" alt="Eliab" style="width:50%">
+      <div class="container">
+        <h2>Eliab Onyango</h2>
+        <p class="title">project manager</p>
+        <p>Am the project manager of the company with a diploma in management and accounting .</p>
+        <p>eliab.gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
